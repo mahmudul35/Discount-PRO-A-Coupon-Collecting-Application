@@ -1,0 +1,225 @@
+[
+  {
+    "_id": "1",
+    "brand_name": "Daraz",
+    "rating": 4.5,
+    "description": "One-stop shopping destination for all your needs.",
+    "brand_logo": "https://i.ibb.co.com/4NQ2dSx/daraz.png",
+    "shop_link": "https://www.daraz.com.bd",
+    "category": "E-commerce",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "DARAZ50",
+        "description": "Get 50% off on your first purchase.",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of 500 BDT.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on orders above 1000 BDT.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid for selected items only.",
+        "coupon_type": "Shipping"
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "brand_name": "Pickaboo",
+    "rating": 4.2,
+    "description": "Your gadget hub with exciting deals.",
+    "brand_logo": "https://i.ibb.co.com/fFw9Q6T/picabbo.png",
+    "shop_link": "https://www.pickaboo.com",
+    "category": "Electronics",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "PICK10",
+        "description": "Flat 10% off on all electronics.",
+        "expiry_date": "2024-11-25",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Flat"
+      }
+    ]
+  },
+  {
+    "_id": "3",
+    "brand_name": "Foodpanda",
+    "rating": 4.7,
+    "description": "Delicious food delivered at your doorstep.",
+    "brand_logo": "https://i.ibb.co.com/P5Kp0VR/food.png",
+    "shop_link": "https://www.foodpanda.com.bd",
+    "category": "Food Delivery",
+    "isSaleOn": false,
+    "coupons": [
+      {
+        "coupon_code": "PANDA20",
+        "description": "20% off on your favorite meals.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid for orders above 300 BDT.",
+        "coupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "4",
+    "brand_name": "Chaldal",
+    "rating": 4.3,
+    "description": "Online grocery store with amazing deals.",
+    "brand_logo": "https://i.ibb.co.com/WGq41yW/chaldal.png",
+    "shop_link": "https://www.chaldal.com",
+    "category": "Groceries",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "CHAL50",
+        "description": "50 BDT off on orders above 500 BDT.",
+        "expiry_date": "2024-11-20",
+        "condition": "Valid on all grocery items.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_code": "FRESH10",
+        "description": "10% off on fresh fruits and vegetables.",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "5",
+    "brand_name": "AjkerDeal",
+    "rating": 4.1,
+    "description": "Deals and discounts on a wide range of products.",
+    "brand_logo": "https://i.ibb.co.com/mcdy9vX/ajker.png",
+    "shop_link": "https://www.ajkerdeal.com",
+    "category": "E-commerce",
+    "isSaleOn": false,
+    "coupons": [
+      {
+        "coupon_code": "DEAL100",
+        "description": "Get 100 BDT off on your first purchase.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of 1000 BDT.",
+        "coupon_type": "Flat"
+      }
+    ]
+  },
+  {
+    "_id": "6",
+    "brand_name": "Rokomari",
+    "rating": 4.6,
+    "description": "Explore books and educational materials with discounts.",
+    "brand_logo": "https://example.com/rokomari-logo.png",
+    "shop_link": "https://www.rokomari.com",
+    "category": "Books",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "READ20",
+        "description": "20% off on all books.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "7",
+    "brand_name": "Pathao",
+    "rating": 4.4,
+    "description": "Ride-sharing and food delivery made easy.",
+    "brand_logo": "https://example.com/pathao-logo.png",
+    "shop_link": "https://www.pathao.com",
+    "category": "Transport",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "PATHAO30",
+        "description": "30% off on your first ride.",
+        "expiry_date": "2024-12-01",
+        "condition": "Valid for new users only.",
+        "coupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "8",
+    "brand_name": "Bikroy",
+    "rating": 4.0,
+    "description": "The best place to buy and sell in Bangladesh.",
+    "brand_logo": "https://example.com/bikroy-logo.png",
+    "shop_link": "https://www.bikroy.com",
+    "category": "Classifieds",
+    "isSaleOn": false,
+    "coupons": [
+      {
+        "coupon_code": "SELL20",
+        "description": "20% off on premium ad placements.",
+        "expiry_date": "2024-11-28",
+        "condition": "Valid for one-time use only.",
+        "coupon_type": "Flat"
+      }
+    ]
+  },
+  {
+    "_id": "9",
+    "brand_name": "Shohoz",
+    "rating": 4.3,
+    "description": "Book bus tickets easily with Shohoz.",
+    "brand_logo": "https://example.com/shohoz-logo.png",
+    "shop_link": "https://www.shohoz.com",
+    "category": "Transport",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "BUS15",
+        "description": "Flat 15% off on bus tickets.",
+        "expiry_date": "2024-12-05",
+        "condition": "Applicable on selected routes only.",
+        "coupon_type": "Flat"
+      }
+    ]
+  },
+  {
+    "_id": "10",
+    "brand_name": "Uber",
+    "rating": 4.6,
+    "description": "Your everyday transportation partner.",
+    "brand_logo": "https://example.com/uber-logo.png",
+    "shop_link": "https://www.uber.com",
+    "category": "Transport",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "UBER100",
+        "description": "100 BDT off on your next ride.",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum ride amount of 500 BDT.",
+        "coupon_type": "Flat"
+      }
+    ]
+  },
+  {
+    "_id": "11",
+    "brand_name": "Hungrynaki",
+    "rating": 4.2,
+    "description": "Local food delivery at its finest.",
+    "brand_logo": "https://example.com/hungrynaki-logo.png",
+    "shop_link": "https://www.hungrynaki.com",
+    "category": "Food Delivery",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "HUNGRY10",
+        "description": "10% off on all orders.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on orders above 200 BDT.",
+        "coupon_type": "Percentage"
+      }
+    ]
+  }
+]
