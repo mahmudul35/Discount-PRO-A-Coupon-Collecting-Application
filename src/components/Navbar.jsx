@@ -1,8 +1,8 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -26,52 +26,26 @@ const Navbar = () => {
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              <NavLink to={"/"}>Home</NavLink>
+              <NavLink to="/brand">Brands</NavLink>
+              <NavLink to="/profile">My Profile</NavLink>
+              <NavLink to="/devloper">About Developer</NavLink>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="btn btn-ghost text-xl">Discount PRO</a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+          <ul class="menu menu-horizontal px-1 gap-6">
+            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to="/brand">Brands</NavLink>
+            <NavLink to="/profile">My Profile</NavLink>
+            <NavLink to="/devloper">About Developer</NavLink>
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Button</a>
+          <NavLink to="/auth/login" class="btn btn-primary">
+            Login
+          </NavLink>
         </div>
       </div>
     </div>
