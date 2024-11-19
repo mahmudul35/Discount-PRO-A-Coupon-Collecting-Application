@@ -19,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/brand",
         element: <Brand />,
+        loader: () => fetch("../data.json"),
       },
       {
         path: "/profile",
