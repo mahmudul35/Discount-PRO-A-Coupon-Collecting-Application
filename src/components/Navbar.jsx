@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import user from "../assets/user.png";
+import userLogo from "../assets/user.png";
 import { AuthContext } from "../context/AuthProvider";
 const Navbar = () => {
-  const { name } = useContext(AuthContext);
-  console.log(name);
+  const { user } = useContext(AuthContext);
+  console.log(user?.email);
   return (
     <div className="container mx-auto">
       <div class="navbar bg-base-100">
@@ -47,7 +47,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div class="navbar-end space-x-5">
-          <img src={user} alt="" />
+          <p>{user?.email}</p>
+          <img src={userLogo} alt="" />
           <Link to="/auth/login" class="btn btn-primary">
             Login
           </Link>
