@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 const Login = () => {
+  const navigate = useNavigate();
   const { signIn } = useContext(AuthContext);
   const handleLogin = (e) => {
     e.preventDefault();
@@ -10,9 +11,11 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         console.log("result", result.user);
+        navigate("/");
       })
       .catch((error) => {
         console.log("error", error.message);
+        alert("Please signup");
       });
   };
   return (

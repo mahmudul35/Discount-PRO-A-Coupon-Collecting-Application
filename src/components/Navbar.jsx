@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import userLogo from "../assets/user.png";
 import { AuthContext } from "../context/AuthProvider";
 const Navbar = () => {
-  const { user } = useContext(AuthContext);
+  const { user, signOutUser } = useContext(AuthContext);
+  console.log(signOutUser);
   console.log(user?.email);
   return (
     <div className="container mx-auto">
@@ -49,9 +50,15 @@ const Navbar = () => {
         <div class="navbar-end space-x-5">
           <p>{user?.email}</p>
           <img src={userLogo} alt="" />
-          <Link to="/auth/login" class="btn btn-primary">
-            Login
-          </Link>
+          {user ? (
+            <button onClick={signOutUser} class="btn btn-primary">
+              Logout
+            </button>
+          ) : (
+            <NavLink to="/auth/login" class="btn btn-primary">
+              Login
+            </NavLink>
+          )}
         </div>
       </div>
     </div>
