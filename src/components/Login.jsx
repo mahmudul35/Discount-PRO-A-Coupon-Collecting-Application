@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
+import { FaGoogle } from "react-icons/fa";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 const Login = () => {
   const navigate = useNavigate();
-  const { signIn } = useContext(AuthContext);
+  const { signIn, signInWithGoogle } = useContext(AuthContext);
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -18,6 +19,18 @@ const Login = () => {
         alert("Please signup");
       });
   };
+  const handleGoogleLogin = () => {
+    signInWithGoogle()
+      .then((result) => {
+        console.log("result", result.user);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log("error", error.message);
+        alert("Please signup");
+      });
+  };
+
   return (
     <div className="flex justify-center items-center h-[calc(100vh-64px)]">
       <div className="card  bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -55,7 +68,13 @@ const Login = () => {
             <button className="btn btn-primary">Login</button>
           </div>
         </form>
-        <p className="text-center pb-5">
+        <div className="divider px-8">OR</div>
+        <div className="form-control mt-1 px-8">
+          <button onClick={handleGoogleLogin} className="btn  bg-base-100">
+            <FaGoogle /> Login with Google
+          </button>
+        </div>
+        <p className="text-center py-5">
           Don't Have an account?{" "}
           <NavLink to="/auth/register" className="font-bold ">
             Register
