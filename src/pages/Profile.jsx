@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../context/AuthProvider";
 
 const Profile = () => {
+  const { user } = useContext(AuthContext);
   return (
     <div className="container mx-auto">
-      <h1>This is from profile page</h1>
+      <div className="bg-base-100 p-6 border rounded-lg mb-7">
+        <h1>{user.email}</h1>
+        <button className="btn ">Update</button>
+      </div>
     </div>
   );
 };

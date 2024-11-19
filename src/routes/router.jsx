@@ -6,6 +6,7 @@ import Root from "../layout/Root";
 import Brand from "../pages/Brand";
 import Home from "../pages/Home";
 import Profile from "../pages/Profile";
+import PrivateRoute from "../private/PrivateRoute";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +24,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile />,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <Profile />
+          </PrivateRoute>
+        ),
       },
     ],
   },
