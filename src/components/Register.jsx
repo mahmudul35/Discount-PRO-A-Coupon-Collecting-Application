@@ -1,17 +1,38 @@
 import React, { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 const Register = () => {
-  const { signUp } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const { signUp, updateUserProfile } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("");
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
+    console.log(name, email, password, photo);
+    // if (password.length < 6) {
+    //   setError("Password should be atleast 6 characters long");
+    //   return;
+    // }
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    if (!passwordRegex.test(password)) {
+      setError(
+        "Password should be atleast 6 characters, with 1 uppercase, 1 lowercase letter"
+      );
+      return;
+    }
     signUp(email, password)
       .then((result) => {
-        console.log("result", result.user);
+        updateUserProfile({
+          displayName: name,
+          photoURL: photo,
+        }).then(() => {
+          navigate("/");
+        });
       })
       .catch((error) => {
         console.log("error", error.message);
@@ -30,6 +51,7 @@ const Register = () => {
             </label>
             <input
               type="text"
+              name="name"
               placeholder="Name"
               className="input input-bordered"
             />
@@ -40,6 +62,7 @@ const Register = () => {
             </label>
             <input
               type="text"
+              name="photo"
               placeholder="Photo URL"
               className="input input-bordered"
             />
@@ -74,6 +97,7 @@ const Register = () => {
               {showPassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
+          {error && <p className="text-red-500">{error}</p>}
           <div className="form-control mt-6">
             <button className="btn btn-primary">Register</button>
           </div>

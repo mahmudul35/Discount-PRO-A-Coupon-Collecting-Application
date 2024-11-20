@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { FaHome } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import userLogo from "../assets/user.png";
 import { AuthContext } from "../context/AuthProvider";
@@ -31,7 +32,12 @@ const Navbar = () => {
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <NavLink to={"/"}>Home</NavLink>
+              <NavLink to={"/"}>
+                <span>
+                  <FaHome />
+                </span>{" "}
+                Home
+              </NavLink>
               <NavLink to="/brand">Brands</NavLink>
               <NavLink to="/profile">My Profile</NavLink>
               <NavLink to="/devloper">About Developer</NavLink>
@@ -47,9 +53,24 @@ const Navbar = () => {
             <NavLink to="/devloper">About Developer</NavLink>
           </ul>
         </div>
+
         <div class="navbar-end space-x-5">
-          <p>{user?.email}</p>
-          <img src={userLogo} alt="" />
+          {user ? (
+            <p>
+              <span className="font-bold">Welcome</span> {user?.displayName}
+            </p>
+          ) : (
+            ""
+          )}
+          {user ? (
+            <img
+              src={user.photoURL ? user.photoURL : userLogo}
+              alt="user"
+              class="rounded-full h-10 w-10"
+            />
+          ) : (
+            <img src={userLogo} alt="" />
+          )}
           {user ? (
             <button onClick={signOutUser} class="btn btn-primary">
               Logout
