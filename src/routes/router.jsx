@@ -4,6 +4,7 @@ import Register from "../components/Register";
 import AuthLayout from "../layout/AuthLayout";
 import Root from "../layout/Root";
 import Brand from "../pages/Brand";
+import CouponPage from "../pages/CouponPage";
 import Home from "../pages/Home";
 import Profile from "../pages/Profile";
 import PrivateRoute from "../private/PrivateRoute";
@@ -21,6 +22,15 @@ const router = createBrowserRouter([
         path: "/brand",
         element: <Brand />,
         loader: () => fetch("../data.json"),
+      },
+      {
+        path: "/brand/:id",
+        loader: ({ params }) => fetch(`../data.json`),
+        element: (
+          <PrivateRoute>
+            <CouponPage />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/profile",

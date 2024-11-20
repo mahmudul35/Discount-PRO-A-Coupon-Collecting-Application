@@ -43,7 +43,7 @@ const Navbar = () => {
           <ul class="menu menu-horizontal px-1 gap-6">
             <NavLink to={"/"}>Home</NavLink>
             <NavLink to="/brand">Brands</NavLink>
-            <NavLink to="/profile">My Profile</NavLink>
+            {user ? <NavLink to="/profile">My Profile</NavLink> : ""}
             <NavLink to="/devloper">About Developer</NavLink>
           </ul>
         </div>
