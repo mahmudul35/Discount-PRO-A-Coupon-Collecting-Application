@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 const Register = () => {
   const { signUp } = useContext(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -14,6 +16,9 @@ const Register = () => {
       .catch((error) => {
         console.log("error", error.message);
       });
+  };
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
   };
   return (
     <div className="flex justify-center items-center h-[calc(100vh-64px)]">
@@ -56,12 +61,18 @@ const Register = () => {
               <span className="label-text">Password</span>
             </label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               placeholder="password"
               name="password"
               className="input input-bordered"
               required
             />
+            <span
+              onClick={togglePassword}
+              className="absolute top-[67.5%] right-11 transform -translate-y-1/2 cursor-pointer"
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </span>
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Register</button>

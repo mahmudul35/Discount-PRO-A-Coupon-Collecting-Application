@@ -10,6 +10,7 @@
     "isSaleOn": true,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "DARAZ50",
         "description": "Get 50% off on your first purchase.",
         "expiry_date": "2024-12-31",
@@ -17,11 +18,36 @@
         "coupon_type": "Percentage"
       },
       {
+        "coupon_id": "2",
         "coupon_code": "FREESHIP",
         "description": "Free shipping on orders above 1000 BDT.",
         "expiry_date": "2024-11-30",
         "condition": "Valid for selected items only.",
         "coupon_type": "Shipping"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "DARAZ10",
+        "description": "10% off on all products.",
+        "expiry_date": "2024-12-15",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "BUNDLE20",
+        "description": "20% off when buying 2 or more items.",
+        "expiry_date": "2024-12-05",
+        "condition": "Valid on selected categories.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "FLASHSALE",
+        "description": "Special Flash Sale: Up to 70% off.",
+        "expiry_date": "2024-11-20",
+        "condition": "Valid for selected items only.",
+        "coupon_type": "Flat"
       }
     ]
   },
@@ -36,11 +62,44 @@
     "isSaleOn": true,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "PICK10",
         "description": "Flat 10% off on all electronics.",
         "expiry_date": "2024-11-25",
         "condition": "No minimum purchase required.",
         "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "PICK15",
+        "description": "15% off on selected gadgets.",
+        "expiry_date": "2024-12-10",
+        "condition": "Valid on specific brands only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "BUNDLE25",
+        "description": "25% off on bundles of 2 or more items.",
+        "expiry_date": "2024-12-05",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on orders above 5000 BDT.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid for all items.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "ELECTRO50",
+        "description": "50% off on selected electronics.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid for select items only.",
+        "coupon_type": "Percentage"
       }
     ]
   },
@@ -55,10 +114,43 @@
     "isSaleOn": false,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "PANDA20",
         "description": "20% off on your favorite meals.",
         "expiry_date": "2024-12-15",
         "condition": "Valid for orders above 300 BDT.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "PANDA50",
+        "description": "50 BDT off on orders above 500 BDT.",
+        "expiry_date": "2024-12-31",
+        "condition": "Valid for all cuisines.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "FREESHIP",
+        "description": "Free delivery on orders above 1000 BDT.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on selected restaurants.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "PANDA10",
+        "description": "10% off on your first order.",
+        "expiry_date": "2024-11-20",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "FOOD40",
+        "description": "40% off on food orders from select restaurants.",
+        "expiry_date": "2024-12-05",
+        "condition": "Valid only on partner restaurants.",
         "coupon_type": "Percentage"
       }
     ]
@@ -74,6 +166,7 @@
     "isSaleOn": true,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "CHAL50",
         "description": "50 BDT off on orders above 500 BDT.",
         "expiry_date": "2024-11-20",
@@ -81,10 +174,35 @@
         "coupon_type": "Flat"
       },
       {
+        "coupon_id": "2",
         "coupon_code": "FRESH10",
         "description": "10% off on fresh fruits and vegetables.",
         "expiry_date": "2024-12-10",
         "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "CHAL100",
+        "description": "100 BDT off on orders above 1000 BDT.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on grocery items only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "FREESHIP",
+        "description": "Free delivery on orders above 2000 BDT.",
+        "expiry_date": "2024-12-05",
+        "condition": "Valid on all items.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "GROCERY25",
+        "description": "25% off on grocery items from selected brands.",
+        "expiry_date": "2024-12-01",
+        "condition": "Valid on select brands only.",
         "coupon_type": "Percentage"
       }
     ]
@@ -100,10 +218,43 @@
     "isSaleOn": false,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "DEAL100",
         "description": "Get 100 BDT off on your first purchase.",
         "expiry_date": "2024-11-30",
         "condition": "Minimum purchase of 1000 BDT.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "DEAL50",
+        "description": "50 BDT off on all items above 500 BDT.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid on selected categories.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "DEAL10",
+        "description": "10% off on all electronic items.",
+        "expiry_date": "2024-12-10",
+        "condition": "Valid on electronics only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on orders above 1500 BDT.",
+        "expiry_date": "2024-12-20",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "BUY1GET1",
+        "description": "Buy 1 get 1 free on select fashion items.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on select fashion items only.",
         "coupon_type": "Flat"
       }
     ]
@@ -119,10 +270,43 @@
     "isSaleOn": true,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "READ20",
         "description": "20% off on all books.",
         "expiry_date": "2024-12-31",
         "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "BOOK100",
+        "description": "100 BDT off on books above 1000 BDT.",
+        "expiry_date": "2024-12-20",
+        "condition": "Valid on all books.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on orders above 1500 BDT.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on book purchases only.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "NEWARRIVAL15",
+        "description": "15% off on new book arrivals.",
+        "expiry_date": "2024-12-10",
+        "condition": "Valid on books released in the last 30 days.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "EDU10",
+        "description": "10% off on educational books.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on educational books only.",
         "coupon_type": "Percentage"
       }
     ]
@@ -138,10 +322,43 @@
     "isSaleOn": true,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "PATHAO30",
         "description": "30% off on your first ride.",
         "expiry_date": "2024-12-01",
         "condition": "Valid for new users only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "RIDE100",
+        "description": "100 BDT off on your first ride.",
+        "expiry_date": "2024-11-25",
+        "condition": "Valid for new users only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "FREERIDE",
+        "description": "Free ride for 5 km.",
+        "expiry_date": "2024-12-10",
+        "condition": "Valid for first-time users only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "PATHAO50",
+        "description": "50 BDT off on your next ride.",
+        "expiry_date": "2024-12-05",
+        "condition": "Valid on rides above 200 BDT.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "RIDE15",
+        "description": "15% off on rides during weekends.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid on weekends only.",
         "coupon_type": "Percentage"
       }
     ]
@@ -157,10 +374,43 @@
     "isSaleOn": false,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "SELL20",
         "description": "20% off on premium ad placements.",
         "expiry_date": "2024-11-28",
         "condition": "Valid for one-time use only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "SELL50",
+        "description": "50% off on listing fees for premium ads.",
+        "expiry_date": "2024-12-10",
+        "condition": "Valid for first-time sellers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "BID10",
+        "description": "10% off on your first bid placement.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid for new users only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "FREEAD",
+        "description": "Post your ad for free on selected categories.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on select categories only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "BID500",
+        "description": "500 BDT off on high-value listings.",
+        "expiry_date": "2024-12-05",
+        "condition": "Valid for items over 5000 BDT.",
         "coupon_type": "Flat"
       }
     ]
@@ -176,10 +426,43 @@
     "isSaleOn": true,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "BUS15",
         "description": "Flat 15% off on bus tickets.",
         "expiry_date": "2024-12-05",
         "condition": "Applicable on selected routes only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "TICKET10",
+        "description": "10% off on tickets for 2 or more passengers.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid on group bookings only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "SHOHOZ50",
+        "description": "50 BDT off on your next bus ticket.",
+        "expiry_date": "2024-11-25",
+        "condition": "Valid for all bus routes.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "FREERIDE",
+        "description": "Free ride on your next trip.",
+        "expiry_date": "2024-12-01",
+        "condition": "Valid for selected routes only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "SHOHOZ100",
+        "description": "100 BDT off for first-time users.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid for new users only.",
         "coupon_type": "Flat"
       }
     ]
@@ -195,10 +478,43 @@
     "isSaleOn": true,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "UBER100",
         "description": "100 BDT off on your next ride.",
         "expiry_date": "2024-12-15",
         "condition": "Minimum ride amount of 500 BDT.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "UBER200",
+        "description": "200 BDT off on your next ride.",
+        "expiry_date": "2024-12-30",
+        "condition": "Valid for rides over 1000 BDT.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "RIDE10",
+        "description": "10% off on your first Uber ride.",
+        "expiry_date": "2024-11-25",
+        "condition": "Valid for new users only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "UBER50",
+        "description": "50 BDT off on your next Uber ride.",
+        "expiry_date": "2024-11-20",
+        "condition": "Valid for rides above 300 BDT.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "FREERIDE",
+        "description": "Free ride on your next trip.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid for select locations only.",
         "coupon_type": "Flat"
       }
     ]
@@ -214,10 +530,43 @@
     "isSaleOn": true,
     "coupons": [
       {
+        "coupon_id": "1",
         "coupon_code": "HUNGRY10",
         "description": "10% off on all orders.",
         "expiry_date": "2024-11-30",
         "condition": "Valid on orders above 200 BDT.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "2",
+        "coupon_code": "HUNGRY50",
+        "description": "50 BDT off on orders above 500 BDT.",
+        "expiry_date": "2024-12-10",
+        "condition": "Valid for new users only.",
+        "coupon_type": "Flat"
+      },
+      {
+        "coupon_id": "3",
+        "coupon_code": "FREESHIP",
+        "description": "Free delivery on orders above 500 BDT.",
+        "expiry_date": "2024-11-25",
+        "condition": "Valid for orders above 500 BDT.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_id": "4",
+        "coupon_code": "FOODIE20",
+        "description": "20% off on your next food order.",
+        "expiry_date": "2024-12-05",
+        "condition": "Valid for orders above 300 BDT.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_id": "5",
+        "coupon_code": "HUNGRY15",
+        "description": "15% off on selected restaurant orders.",
+        "expiry_date": "2024-12-01",
+        "condition": "Valid only at select restaurants.",
         "coupon_type": "Percentage"
       }
     ]
