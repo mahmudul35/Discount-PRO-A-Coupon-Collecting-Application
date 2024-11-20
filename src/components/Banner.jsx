@@ -1,4 +1,6 @@
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -9,6 +11,9 @@ import coupon1 from "../assets/coupon1.jpg";
 import coupon2 from "../assets/coupon2.jpg";
 import coupon3 from "../assets/coupon3.jpg";
 const Banner = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="mb-20">
       <Swiper

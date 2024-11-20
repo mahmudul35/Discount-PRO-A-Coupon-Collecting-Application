@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
+import BrandsOnSell from "../components/BrandsOnSell ";
 import TopBrand from "../components/TopBrand";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div className="container mx-auto">
       <Banner />
       <TopBrand />
+      <BrandsOnSell />
     </div>
   );
 };

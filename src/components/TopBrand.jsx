@@ -6,7 +6,9 @@ const TopBrand = () => {
   console.log(data);
   return (
     <div>
-      <h1 className="text-4xl font-bold mb-5">Top Brands</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+        Top Brands
+      </h1>
       <Marquee speed={300}>
         {data.map((item) => (
           <div key={item.id}>

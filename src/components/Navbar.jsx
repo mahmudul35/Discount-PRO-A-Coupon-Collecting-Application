@@ -43,7 +43,7 @@ const Navbar = () => {
               <NavLink to="/devloper">About Developer</NavLink>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">Discount PRO</a>
+          <a class="btn btn-ghost text-xl text-green-500">Discount PRO</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 gap-6">
@@ -72,11 +72,11 @@ const Navbar = () => {
             <img src={userLogo} alt="" />
           )}
           {user ? (
-            <button onClick={signOutUser} class="btn btn-primary">
+            <button onClick={signOutUser} class="btn  bg-green-500 text-white">
               Logout
             </button>
           ) : (
-            <NavLink to="/auth/login" class="btn btn-primary">
+            <NavLink to="/auth/login" class="btn  bg-green-500 text-white">
               Login
             </NavLink>
           )}

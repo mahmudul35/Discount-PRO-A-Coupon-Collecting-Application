@@ -29,7 +29,7 @@ const CouponPage = () => {
         <img src={brand_logo} alt="" className="w-96" />
         <h1>{brand_name}</h1>
       </div>
-      <div className="grid grid-cols-2 gap-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {coupons.map((coupon) => (
           <div key={coupon.coupon_id} className="card bordered w-96">
             <figure>

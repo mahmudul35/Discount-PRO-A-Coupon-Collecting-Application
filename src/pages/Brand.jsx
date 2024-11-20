@@ -1,8 +1,13 @@
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 const Brand = () => {
   const data = useLoaderData();
   console.log("data from brand page", data);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="container mx-auto p-6 ">
       <h1 className="text-2xl font-bold text-center mb-4">All Brands</h1>
@@ -35,6 +40,13 @@ const Brand = () => {
             </div>
             <div>
               <Link to={`/brand/${item._id}`}>
+                {item.isSaleOn ? (
+                  <p className="text-red-500 animate-bounce font-medium">
+                    🔥 Sale is On!
+                  </p>
+                ) : (
+                  <p className="text-gray-400">No Sale</p>
+                )}
                 <button className="bg-green-500 text-white px-4 py-2 rounded-lg">
                   View Coupons
                 </button>
