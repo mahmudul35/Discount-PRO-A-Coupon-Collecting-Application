@@ -25,8 +25,6 @@ const Banner = () => {
           delay: 2000,
           disableOnInteraction: false,
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <img src={coupon2} alt="" className="w-full" />

@@ -8,7 +8,6 @@ const CouponPage = () => {
   const { id } = useParams();
   const data = useLoaderData();
   const coupon = data.find((item) => item._id === id);
-  console.log("coupon", coupon);
 
   const {
     brand_logo,

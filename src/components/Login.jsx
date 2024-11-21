@@ -12,22 +12,18 @@ const Login = () => {
     const password = e.target.password.value;
     signIn(email, password)
       .then((result) => {
-        console.log("result", result.user);
         navigate("/");
       })
       .catch((error) => {
-        console.log("error", error.message);
         alert("Please signup");
       });
   };
   const handleGoogleLogin = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log("result", result.user);
         navigate("/");
       })
       .catch((error) => {
-        console.log("error", error.message);
         alert("Please signup");
       });
   };

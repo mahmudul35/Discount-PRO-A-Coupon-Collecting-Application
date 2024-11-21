@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 import { Link, useLoaderData } from "react-router-dom";
 const TopBrand = () => {
   const data = useLoaderData();
-  console.log(data);
+
   return (
     <div>
       <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">

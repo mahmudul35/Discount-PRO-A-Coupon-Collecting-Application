@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 const Brand = () => {
   const data = useLoaderData();
-  console.log("data from brand page", data);
+
   useEffect(() => {
     AOS.init();
   }, []);

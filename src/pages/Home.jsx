@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Banner from "../components/Banner";
 import BrandsOnSell from "../components/BrandsOnSell ";
 import TopBrand from "../components/TopBrand";
+import TopRatedBrands from "../components/TopRatedBrand";
 import WelcomeHeader from "../components/WelcomeHeader";
 import { AuthContext } from "../context/AuthProvider";
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner />
       <TopBrand />
       <BrandsOnSell />
+      <TopRatedBrands />
     </div>
   );
 };

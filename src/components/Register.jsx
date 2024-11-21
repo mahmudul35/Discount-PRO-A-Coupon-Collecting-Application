@@ -13,11 +13,7 @@ const Register = () => {
     const password = e.target.password.value;
     const name = e.target.name.value;
     const photo = e.target.photo.value;
-    console.log(name, email, password, photo);
-    // if (password.length < 6) {
-    //   setError("Password should be atleast 6 characters long");
-    //   return;
-    // }
+
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     if (!passwordRegex.test(password)) {
       setError(
@@ -35,7 +31,7 @@ const Register = () => {
         });
       })
       .catch((error) => {
-        console.log("error", error.message);
+        // console.log("error", error.message);
       });
   };
   const togglePassword = () => {

@@ -5,8 +5,7 @@ import userLogo from "../assets/user.png";
 import { AuthContext } from "../context/AuthProvider";
 const Navbar = () => {
   const { user, signOutUser } = useContext(AuthContext);
-  console.log(signOutUser);
-  console.log(user?.email);
+
   return (
     <div className="container mx-auto">
       <div class="navbar bg-base-100">
