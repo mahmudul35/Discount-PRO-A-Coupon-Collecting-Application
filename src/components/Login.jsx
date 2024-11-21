@@ -1,31 +1,49 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 const Login = () => {
   const navigate = useNavigate();
   const { signIn, signInWithGoogle } = useContext(AuthContext);
-  const [showPassword, setShowPassword] = React.useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("");
+  const emailRef = useRef(null);
+
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+    setError("");
     signIn(email, password)
       .then((result) => {
         navigate("/");
       })
-      .catch((error) => {});
+      .catch((error) => {
+        setError("Invalid email or password. Please try again.");
+      });
   };
   const handleGoogleLogin = () => {
     signInWithGoogle()
       .then((result) => {
         navigate("/");
       })
-      .catch((error) => {});
+      .catch((error) => {
+        setError("Failed to sign in with Google. Please try again.");
+      });
   };
 
   const togglePassword = () => {
     setShowPassword(!showPassword);
+  };
+  const handleForgotPassword = (e) => {
+    e.preventDefault();
+
+    const email = emailRef.current.value || "";
+    if (!email) {
+      alert("Please enter your email address first!");
+      return;
+    }
+    navigate("/forgetPassword", { state: { email } });
   };
 
   return (
@@ -39,6 +57,7 @@ const Login = () => {
             <input
               type="email"
               placeholder="email"
+              ref={emailRef}
               name="email"
               className="input input-bordered"
               required
@@ -62,10 +81,15 @@ const Login = () => {
               {showPassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
+          {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
           <label className="label">
-            <a href="#" className="label-text-alt link link-hover">
+            <Link
+              to="/forgetPassword"
+              className="label-text-alt link link-hover"
+              onClick={handleForgotPassword}
+            >
               Forgot password?
-            </a>
+            </Link>
           </label>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Login</button>

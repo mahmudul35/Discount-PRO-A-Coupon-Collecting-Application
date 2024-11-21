@@ -37,7 +37,9 @@ const Navbar = () => {
               <NavLink to="/devloper">About Developer</NavLink>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl text-green-500">Discount PRO</a>
+          <a class="btn btn-ghost text-xl text-green-500 hidden md:inline">
+            Discount PRO
+          </a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 gap-6">

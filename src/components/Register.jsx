@@ -93,11 +93,12 @@ const Register = () => {
               {showPassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
-          {error && <p className="text-red-500">{error}</p>}
+
           <div className="form-control mt-6">
             <button className="btn btn-primary">Register</button>
           </div>
         </form>
+        {error && <p className="text-red-500">{error}</p>}
         <p className="text-center pb-5">
           Already Have an account?{" "}
           <NavLink to="/auth/login" className="font-bold ">

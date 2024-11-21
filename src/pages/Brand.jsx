@@ -32,9 +32,9 @@ const Brand = () => {
                 className="w-[100px] rounded-lg"
               />
               <p>{item.brand_name}</p>
-              <p>Rating: {item.rating}</p>
+              <p>Rating: {item.rating} ★</p>
             </div>
-            <div className="  w-96">
+            <div className="hidden md:inline-block  w-96">
               <h1 className="text-xl font-bold">{item.brand_name}</h1>
               <p>{item.description}</p>
             </div>

@@ -25,6 +25,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const updateUserProfile = (updatedData) => {
+    setLoading(true);
     return updateProfile(auth.currentUser, updatedData);
   };
 
@@ -44,6 +45,7 @@ const AuthProvider = ({ children }) => {
   }, []);
 
   const signOutUser = () => {
+    setLoading(true);
     return signOut(auth);
   };
 

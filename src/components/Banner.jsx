@@ -31,21 +31,21 @@ const Banner = () => {
           <img
             src={coupon1}
             alt=""
-            className="w-full h[300px] md:550px lg:h-[700px] rounded-lg"
+            className="w-full h[300px] md:h-[550px] lg:h-[700px] rounded-lg"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={coupon2}
             alt=""
-            className="w-full h[300px] md:550px lg:h-[700px] rounded-lg"
+            className="w-full h[300px] md:h-[550px] lg:h-[700px] rounded-lg"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={coupon3}
             alt=""
-            className="w-full h[300px] md:550px lg:h-[700px] rounded-lg"
+            className="w-full h[300px] md:h-[550px] lg:h-[700px] rounded-lg"
           />
         </SwiperSlide>
       </Swiper>
