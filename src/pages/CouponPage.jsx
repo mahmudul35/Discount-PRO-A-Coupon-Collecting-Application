@@ -17,16 +17,17 @@ const CouponPage = () => {
     coupon_description,
     coupon_expiry,
     coupon_discount,
+    rating,
   } = coupon;
 
-  // To show feedback after copying
   const [copied, setCopied] = React.useState(null);
 
   return (
     <div className="flex flex-col justify-center items-center  mt-9 mb-32">
       <div>
-        <img src={brand_logo} alt="" className="w-96" />
-        <h1>{brand_name}</h1>
+        <img src={brand_logo} alt="" className="w-96 mx-auto" />
+        <h1 className="text-center font-bold text-2xl my-3">{brand_name}</h1>
+        <p className="text-center">Rating: {rating}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {coupons.map((coupon) => (

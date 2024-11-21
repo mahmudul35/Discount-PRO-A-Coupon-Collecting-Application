@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Banner from "../components/Banner";
 import BrandsOnSell from "../components/BrandsOnSell ";
+import FeaturedBrands from "../components/Feature";
 import TopBrand from "../components/TopBrand";
 import TopRatedBrands from "../components/TopRatedBrand";
 import WelcomeHeader from "../components/WelcomeHeader";
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner />
       <TopBrand />
       <BrandsOnSell />
+      <FeaturedBrands />
       <TopRatedBrands />
     </div>
   );
