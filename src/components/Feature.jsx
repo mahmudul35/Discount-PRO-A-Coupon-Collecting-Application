@@ -39,7 +39,7 @@ const FeaturedBrands = () => {
               Category: {brand.category}
             </p>
 
-            <div className="text-center mt-4">
+            <div className="text-center my-4">
               <a
                 href={brand.shop_link}
                 target="_blank"

@@ -7,6 +7,7 @@ import Root from "../layout/Root";
 import Brand from "../pages/Brand";
 import CouponPage from "../pages/CouponPage";
 import Developer from "../pages/Developer";
+import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Profile from "../pages/Profile";
 import PrivateRoute from "../private/PrivateRoute";
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -72,10 +74,6 @@ const router = createBrowserRouter([
         element: <Register />,
       },
     ],
-  },
-  {
-    path: "*",
-    element: <h1>404 Not Found</h1>,
   },
 ]);
 export default router;

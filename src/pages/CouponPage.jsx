@@ -45,11 +45,13 @@ const CouponPage = () => {
                 text={coupon.coupon_code}
                 onCopy={() => setCopied(coupon.coupon_id)} // Track copied coupon
               >
-                <button className="btn bg-red-400 text-white">Copy </button>
+                <button className="btn bg-red-400 text-white">
+                  Copy Code{" "}
+                </button>
               </CopyToClipboard>
               <a href={shop_link} target="_blank" rel="noopener noreferrer">
                 <button className="btn w-full bg-green-500 text-white">
-                  Shop Now
+                  Use Now
                 </button>
               </a>
               {copied === coupon.coupon_id && (

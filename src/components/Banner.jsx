@@ -7,8 +7,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import coupon1 from "../assets/abc.jpg";
 import coupon2 from "../assets/coupon2.jpg";
+import coupon1 from "../assets/darazz.jpg";
 import coupon3 from "../assets/free.jpg";
 const Banner = () => {
   useEffect(() => {
@@ -28,13 +28,25 @@ const Banner = () => {
         }}
       >
         <SwiperSlide>
-          <img src={coupon1} alt="" className="w-full h-[700px] rounded-lg" />
+          <img
+            src={coupon1}
+            alt=""
+            className="w-full h[300px] md:550px lg:h-[700px] rounded-lg"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={coupon2} alt="" className="w-full h-[700px] rounded-lg" />
+          <img
+            src={coupon2}
+            alt=""
+            className="w-full h[300px] md:550px lg:h-[700px] rounded-lg"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={coupon3} alt="" className="w-full h-[700px] rounded-lg" />
+          <img
+            src={coupon3}
+            alt=""
+            className="w-full h[300px] md:550px lg:h-[700px] rounded-lg"
+          />
         </SwiperSlide>
       </Swiper>
     </div>

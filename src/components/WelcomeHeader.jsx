@@ -6,7 +6,7 @@ const WelcomeHeader = () => {
     <div className="bg-red-300 p-6 rounded-lg my-6">
       <p className="text-center text-2xl">
         <span>
-          Welcome Mr, <br />{" "}
+          Welcome, <br />{" "}
         </span>{" "}
         {user?.displayName}
       </p>

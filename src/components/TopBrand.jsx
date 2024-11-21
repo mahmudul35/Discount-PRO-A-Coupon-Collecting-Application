@@ -9,7 +9,7 @@ const TopBrand = () => {
       <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
         Top Brands
       </h1>
-      <Marquee speed={300}>
+      <Marquee speed={300} pauseOnHover={true}>
         {data.map((item) => (
           <div key={item.id}>
             <Link to={"/brand"}>

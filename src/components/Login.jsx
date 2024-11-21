@@ -14,18 +14,14 @@ const Login = () => {
       .then((result) => {
         navigate("/");
       })
-      .catch((error) => {
-        alert("Please signup");
-      });
+      .catch((error) => {});
   };
   const handleGoogleLogin = () => {
     signInWithGoogle()
       .then((result) => {
         navigate("/");
       })
-      .catch((error) => {
-        alert("Please signup");
-      });
+      .catch((error) => {});
   };
 
   const togglePassword = () => {

@@ -39,15 +39,20 @@ const Brand = () => {
               <p>{item.description}</p>
             </div>
             <div>
+              {item.isSaleOn ? (
+                <p className="text-red-500 animate-bounce font-medium">
+                  🔥 Sale is On!
+                </p>
+              ) : (
+                <p className="text-gray-400">No Sale</p>
+              )}
               <Link to={`/brand/${item._id}`}>
-                {item.isSaleOn ? (
-                  <p className="text-red-500 animate-bounce font-medium">
-                    🔥 Sale is On!
-                  </p>
-                ) : (
-                  <p className="text-gray-400">No Sale</p>
-                )}
-                <button className="bg-green-500 text-white px-4 py-2 rounded-lg">
+                <button
+                  disabled={!item.isSaleOn}
+                  className={`${
+                    item.isSaleOn ? "bg-green-500" : "bg-gray-400"
+                  } text-white px-4 py-2 rounded-lg`}
+                >
                   View Coupons
                 </button>
               </Link>
