@@ -30,7 +30,7 @@ The goal of Discount PRO is to simplify the process of finding and using discoun
 
 - **Custom Animations**:
 
-  - Smooth animations using `AOS` .
+  - Smooth animations using `AOS`.
 
 - **Dynamic Sections**:
 
@@ -39,9 +39,69 @@ The goal of Discount PRO is to simplify the process of finding and using discoun
 - **Error Handling**:
   - 404 error page for invalid routes with navigation options to return home.
 
-## npm packages
+---
 
-- react router
-- react copy to clipboard
-- react marquee
-- AOS
+## 🚀 Tech Stack
+
+### Frontend
+
+- **React.js**: For building the user interface.
+- **Tailwind CSS**: For responsive styling.
+- **React Router**: For navigation.
+- **AOS**: For animations.
+- **React Copy to Clipboard**: For seamless coupon copying.
+
+---
+
+## 📦 Dependencies
+
+```json
+"dependencies": {
+    "firebase": "^11.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-fast-marquee": "^1.6.5",
+    "aos": "^2.3.4"
+}
+```
+
+---
+
+## 🛠 Installation & Setup
+
+Follow these steps to set up Discount PRO locally:
+
+### 🔹 Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/discount-pro.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd discount-pro
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 📩 Contact
+
+For any queries or contributions, reach out at: **mahmudul.cse.pust@gmail.com**
+
+Happy Coding! 🚀
